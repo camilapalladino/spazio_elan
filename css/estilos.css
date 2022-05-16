@@ -1,0 +1,154 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-size: 12px;
+}
+ul {
+    background-color: gray;
+    font-size: 50px;
+    text-align: center;
+    font-style: italic;
+    }
+
+ul{
+    list-style-type: none;
+} 
+p{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+h1{
+    font-size: 30px;
+    text-align: center;
+ 
+}
+h2{
+    background-image: url(../recursos/section1.JPG);
+    margin: 0;
+    background-position: center; 
+    width: 100%;
+    height: 300px;
+    text-align: center;
+    font-size: 30px;
+
+} 
+li{
+    display: inline;
+}
+
+p{
+    display: inline;
+}
+
+    .vip__list{
+        text-align: center;
+     
+
+    } 
+    .titulo__viplist{
+        font-size: 50px;
+    } 
+
+
+    .encontranos__en{
+       text-align: center;
+    } 
+
+article{
+
+display: inline;
+text-align: left;
+width: 50px;
+height: 50px;
+
+    } 
+   
+    img{
+        padding: 10px;
+        margin: 40px;
+        width: 200px;
+        height: 200px;
+        }
+
+button{
+    background-color: gray
+    color:black;
+
+}
+
+form{
+    text-align: center;
+   
+}
+
+.grid__container{
+    display: grid;
+    grid-template-rows:150px 150px 150px 150px;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1px;
+    justify-content:center ;
+    background-position: center;
+  
+}
+.grid__item{
+    border: 1px solid grey;
+}
+
+.grid__uno{
+    grid-row-start: 1;
+    grid-row-end: 3;
+    background-image:url(../recursos/almohadon\ 1.JPG) ;
+    background-size:300px;
+    background-repeat: no-repeat;
+    background-position: inherit;
+    display: flex;
+    flex-direction: column column-reverse;
+}
+.grid__cuatro{
+    grid-row: 2/5;
+    grid-column: 2/3;
+    background-image: url(../recursos/funda1.jpg);
+    background-position: inherit;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+}
+.grid__cinco{
+    grid-row: 2/4;
+    grid-column: 3/4;
+    background-image: url(../recursos/cortina\ 2.jpg);
+    background-position: inherit;
+    background-size:contain ;
+    background-repeat:no-repeat;
+    display: flex;
+    flex-direction: column column-reverse;
+} 
+
+    
+
+@media (min-widht:541px) and (max-width:720px){
+        header{
+            background-color:blue;
+        }
+    
+}
+@media (min-widht:320px) and (max-width:540px){
+    header{
+        background-color: aqua;
+    }
+
+}
+.grid__containers{
+    display: grid;
+    grid-template-areas: "header header header"
+                           "main main main"
+                        "footer footer footer"
+}   
+header{
+    grid-area: header;
+} 
+main{
+    grid-area: main;
+}
+footer{
+    grid-area: footer;
+}
