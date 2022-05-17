@@ -67,6 +67,7 @@ height: 50px;
         margin: 40px;
         width: 200px;
         height: 200px;
+        transform: scale(1.5);
         }
 
 button{
