@@ -35,9 +35,7 @@ li{
     display: inline;
 }
 
-p{
-    display: inline;
-}
+
 
     .vip__list{
         text-align: center;
@@ -48,19 +46,6 @@ p{
         font-size: 50px;
     } 
 
-
-    .encontranos__en{
-       text-align: center;
-    } 
-
-article{
-
-display: inline;
-text-align: left;
-width: 50px;
-height: 50px;
-
-    } 
    
     img{
         padding: 10px;
@@ -152,4 +137,8 @@ main{
 }
 footer{
     grid-area: footer;
-}
+} 
+.footer__redes {
+    width: 50px;
+    height: 50px;
+} 
