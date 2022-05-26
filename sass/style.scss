@@ -1,0 +1,150 @@
+@import'variables'; 
+@import'header';
+@import'footer';
+
+*{
+    margin: 0px;
+    padding: 0px;
+    font-size: 12px;
+}
+ul {
+    background-color:$color-principal;
+    font-size: 50px;
+    text-align: center;
+    font-style: italic; 
+    list-style-type: none;
+}
+p{
+    font-family: $font-principal
+
+}
+
+h1{
+    font-size: 30px;
+    text-align: center;
+ 
+}
+h2{
+    background-image: url(../recursos/section1.JPG);
+    margin: 0;
+    background-position: center; 
+    width: 100%;
+    height: 300px;
+    text-align: center;
+    font-size: 30px;
+
+} 
+li{
+    display: inline;
+}
+
+
+    .vip__list{
+        text-align: center;
+     
+
+    } 
+    .titulo__viplist{
+        font-size: 50px;
+    } 
+
+
+article{
+
+display: inline;
+text-align: left;
+width: 50px;
+height: 50px;
+
+    } 
+   
+    img{
+        padding: 10px;
+        margin: 40px;
+        width: 200px;
+        height: 200px;
+        transform: scale(1.5);
+        }
+
+button{
+    background-color:$color-boton
+}
+
+form{
+    text-align: center;
+   
+}
+
+
+.grid{
+    &__container{
+        display: grid;
+        grid-template-rows:150px 150px 150px 150px;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 1px;
+        justify-content:center ;
+        background-position: center;
+    }
+    &__item{
+        border: 1px solid grey;
+    }
+    &__uno{
+        grid-row-start: 1;
+        grid-row-end: 3;
+        background-image: url(../recursos/funda1.jpg);
+        background-size:300px;
+        background-repeat: no-repeat;
+        background-position: inherit;
+        display: flex;
+        flex-direction: column column-reverse;
+
+    }
+    &__cuatro{
+        grid-row:2/5;
+        grid-column:2/3;
+        background-image:url(../recursos/funda1.jpg);
+        background-position:inherit;
+        background-size:cover;
+        display:flex;
+        flex-direction:column; 
+
+    }
+    
+    &__cinco{
+        grid-row: 2/4;
+    grid-column: 3/4;
+    background-image: url(../recursos/funda1.jpg);
+    background-position:inherit;
+    background-size:contain ;
+    background-repeat:no-repeat;
+    display: flex;
+    flex-direction:column column-reverse;
+    }
+   
+    &__containers{
+        display:grid;
+        grid-template-areas:"header header header"
+                               "main main main"
+                            "footer footer footer"
+
+    }
+ 
+
+}
+.footer{
+    display: flex;
+    grid-area: footer;
+    &__redes{
+        width: 50px;
+        height: 50px;
+    }
+    
+}
+  
+
+header{
+    grid-area: header;
+} 
+main{
+    grid-area: main;
+}
