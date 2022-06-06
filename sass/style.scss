@@ -35,17 +35,29 @@ h2{
 
 } 
 li{
+    flex-grow: 1; 
     display: inline;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 15px; 
+    font-family: "Leckerli One", cursive;
+    color: white;
+    text-decoration-line: none;
+
+
 }
 
 
     .vip__list{
         text-align: center;
+      
      
 
     } 
     .titulo__viplist{
         font-size: 50px;
+      
     } 
 
 
@@ -57,6 +69,16 @@ width: 50px;
 height: 50px;
 
     } 
+
+    .datos__menu { 
+        display: flexbox;
+        text-align: left;
+        width: 10px;
+        height: 10px;
+
+    }
+
+    
    
     img{
         padding: 10px;
@@ -67,12 +89,24 @@ height: 50px;
         }
 
 button{
-    background-color:$color-boton
+    padding: 10px 20px;
+    border-radius:3px;
+    background: #FF6F00;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    display: inline-block;
+    cursor: pointer;
 }
 
+
 form{
-    text-align: center;
-   
+ text-align: center;
+ grid-area: initial;
+ justify-self: center;
+ display: flex;
+ flex-direction: column;
+ gap: 0.63rem;
 }
 
 
@@ -91,7 +125,7 @@ form{
     &__uno{
         grid-row-start: 1;
         grid-row-end: 3;
-        background-image: url(../recursos/funda1.jpg);
+        background-image: url(../recursos/sassII/verde.jpg);
         background-size:300px;
         background-repeat: no-repeat;
         background-position: inherit;
@@ -113,7 +147,7 @@ form{
     &__cinco{
         grid-row: 2/4;
     grid-column: 3/4;
-    background-image: url(../recursos/funda1.jpg);
+    background-image: url(../recursos/cortina1.jpg);
     background-position:inherit;
     background-size:contain ;
     background-repeat:no-repeat;
