@@ -7,13 +7,7 @@
     padding: 0px;
     font-size: 12px;
 }
-ul {
-    background-color:$color-principal;
-    font-size: 50px;
-    text-align: center;
-    font-style: italic; 
-    list-style-type: none;
-}
+
 p{
     font-family: $font-principal
 
@@ -34,18 +28,32 @@ h2{
     font-size: 30px;
 
 } 
-li{
-    flex-grow: 1; 
-    display: inline;
-    flex-wrap: wrap;
-    flex-direction: column;
-    justify-content: flex-end;
-    padding: 15px; 
-    font-family: "Leckerli One", cursive;
+ul {
+    padding: 0;
+    list-style: none;
+    margin: 0;
+    background: gray;
+    line-height: 30px;
     color: white;
-    text-decoration-line: none;
+    background-color:$color-principal;
+    font-size: 50px;
+    text-align: center;
+    font-style: italic; 
+    list-style-type: none;
+   
+}
 
+a{
+    color: white;
+    text-align: none;
+    display: block;
+    text-decoration: none;
+}
 
+li{
+    width: 100px;
+    display: inline-block;
+    text-align: center;
 }
 
 
@@ -62,11 +70,9 @@ li{
 
 
 article{
-
-display: inline;
-text-align: left;
-width: 50px;
-height: 50px;
+    display: inline;
+    width: 50px;
+    height: 50px;
 
     } 
 
@@ -77,9 +83,7 @@ height: 50px;
         height: 10px;
 
     }
-
-    
-   
+ 
     img{
         padding: 10px;
         margin: 40px;
@@ -162,6 +166,18 @@ form{
                             "footer footer footer"
 
     }
+
+    &__dos{
+    background-image: url(../recursos/ALMOHADONES.jpg);
+    }
+
+    &__tres{
+        background-image: url(../recursos/CORTINAS.jpg);
+    }
+
+    &__seis{
+        background-image: url(../recursos/FUNDASDESILLONES.jpg);
+    }
  
 
 }
@@ -175,7 +191,6 @@ form{
     
 }
   
-
 header{
     grid-area: header;
 } 
